@@ -9,7 +9,9 @@ user_age = int(input('Введите ваш возраст (полных лет)
 
 # 2. Сбор данных
 user_weight = float(input('Введите ваш вес в кг: ').replace(',', '.'))
-user_height = float(input('Введите ваш рост в метрах, например 1.75: ').replace(',', '.'))
+user_height = float(
+    input('Введите ваш рост в метрах, например 1.75: ').replace(',', '.')
+)
 # 3. Логика расчетов
 bmi = round(user_weight / (user_height ** 2), 1)
 water_in_milliliters = user_weight * WATER_REQUIREMENT_PER_KG
